@@ -1,0 +1,93 @@
+1) Descreva passo a passo como criar um projeto em C++ no Visual Studio.
+
+- Criar um novo projeto
+- Criar um projeto vazio
+- Dar nome e o local do projeto
+
+
+2) Descreva como fechar um projeto aberto sem fechar o Visual Studio.
+
+- Abrir o menu "File"
+- "Close Solution"
+
+3) Descreva os passos necessários para apagar por completo um projeto do disco,
+sem deixar rastros dele no Visual Studio.
+
+- Fechar o Visual Studio
+- Encontrar o diretório onde foi salvo o projeto
+- Excluir o diretório referente ao projeto
+
+4) O professor de programação de computadores utilizou o Visual Studio para criar
+um projeto chamado ProgComp e nele adicionou um arquivo fonte chamado
+"primeiro.cpp". Se o Visual Studio está configurado para guardar os projetos em
+"C:\Visual Studio\Projects", responda:
+• Onde está localizado "primeiro.cpp"? Indique o caminho completo.
+C:\Visual Studio\Projects\ProgComp\ProgComp\primeiro.cpp
+
+• Descreva a sequência de passos para criar e executar outro código fonte,
+chamado "segundo.cpp", neste mesmo projeto.
+- Adicionar um novo item e nomea-lo 
+- Excluir do projeto o arquivo que estava sendo compilado anteriormente
+- Executar o arquivo desejado
+
+5) Um erro de sintaxe fere a gramática da linguagem de programação e por
+consequência gera um erro na hora da compilação do programa. Um erro de
+semântica é um erro na lógica de programação, que muitas vezes o compilador
+não detecta. Um programa com um erro semântico pode executar, mas não dá a
+resposta esperada. Que tipo de ferramentas o Visual Studio oferece para tratar
+erros em um programa?
+
+- Error List
+- Debugger
+- Watch Window
+
+6) Qual opção de menu, e a tecla de atalho correspondente, para iniciar a depuração
+de um programa no Visual Studio?
+Debug > Start Debugging; corresponde a tecla F5
+
+• É possível iniciar a depuração se um programa possuir erros de sintaxe?
+Não, a depuração é mais efetiva para erros de semântica uma vez que não é possível
+iniciar depuração em códigos com erro de sintaxe.
+
+• Como iniciar a depuração sem ser pela tecla de atalho ou menu?
+- "Local Windows Debugger" na barra de ferramentas
+- Pesquisando "Start Debugging" na caixa de pesquisa
+
+7) O que é um ponto de parada (breakpoint) e como adicionar um no Visual Studio?
+
+Breakpoints são pontos de interrupção na depuração que permitem que o programador analize melhor
+a execução do código e consiga encontrar os erros.
+Podem ser adicionados clicando na barra a esquerda da numeração de linhas ou pela tecla de atalho F9. 
+
+8) Como se pode observar o valor de uma variável durante a depuração de um
+programa? Liste todas as formas possíveis para fazer isso no Visual Studio.
+- Watch Window
+- Output Window
+- Autos
+- Locals Window
+
+
+-- EXERCÍCIOS DE APRENDIZAGEM -- 
+
+3)
+•Quais os valores das variáveis a e b após executar a linha abaixo? Todas as
+variáveis iniciam com valor zero?
+
+Valor indeterminado visto que foram apenas declaradas e não foram inicializadas.
+Não, para iniciar todas as variáveis com o valor 0 seria da seguinte forma: 
+
+int a, b, c;
+a = b = c = 0
+
+•Se o código acima for alterado de forma que a variável c não receba o valor zero,
+como mostrado abaixo, o programa ainda compila corretamente? Se não, veja a
+mensagem de erro do compilador e explique o porquê do erro.
+
+"unintialized local variable 'c' used", esse erro ocorre pois no programa a variável c foi declarada porém não foi inicializada,
+ou seja, não atribuímos valor nenhum a ela e em seguida tentamos atribuir o valor de c para a, resultando no erro já que c não
+tem valor portanto não pode atribuir nada a outras variáveis.
+
+
+4)
+No código 04 as variáveis não são utilizadas novamente, esse salto de linhas é uma otimização do compilador que faz esse salto em linhas
+de pouco impacto ou com variáveis que não voltam a aparecer no código.

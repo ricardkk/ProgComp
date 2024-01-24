@@ -1,0 +1,58 @@
+1. Quais as linguagens de programação mais populares atualmente e em que tipos de
+aplicações elas são usadas?
+
+- Python: Ciência de dados, aprendizagem de máquina, automação.
+- C++: Desenvolvimento de jogos, sistemas operacionais, softwares embarcados.
+- Java: Softwares corporativos, aplicações mobile (android).
+- JavaScript: Desenvolvimento web, extensões de navegadores.
+
+
+2. Qual a diferença entre uma linguagem de programação compilada e uma
+interpretada? Existe diferença de desempenho entre elas? Dê exemplos de
+linguagens dos dois tipos.
+
+Nas linguagens compiladas o código-fonte é compilado para linguagem de máquina ou uma linguagem de baixo nível
+e é executado diretamente pelo sistema operacional, costumam ser mais rápidas pois a otimização ocorre durante
+a compilação
+Exemplos: C++, Java, Rust
+
+As linguagens compiladas necessitam de um interpretador que irá executar o código linha a linha em tempo real,
+o que pode causar uma lentidão já que a otimização e a execução são simultâneas.
+Exemplos: Python, JavaScript, PHP
+
+3. Quais os editores de código mais usados atualmente? Como o Visual Studio 2022
+está posicionado neste ranking?
+
+De acordo com uma pesquisa realizada em 2021 pelo Stack Overflow, os editores mais usados são:
+
+- VSCode
+- Visual Studio
+- Notepad++
+- IntelliJ
+- Vim
+
+Com o Visual Studio ficando em segundo lugar.
+
+
+
+
+4. Qual a diferença entre um editor de código e um ambiente de desenvolvimento?
+Cite exemplos de ambos. O Visual Studio 2022 está classificado em qual categoria?
+
+Um editor de código se limita apenas a criação, visualização e edição dos arquivos e possuem a proposta de 
+serem mais leves.
+Exemplos: VSCode, Vim, Notepad++
+
+Ambientes de desenvolvimento oferecem uma vasta gama de funcionalidades para o desenvolvedor, como depuração,
+controle de versão, compilador, gerenciamento de projetos, e por isso costumam ser softwares mais pesados.
+Exemplos: Visual Studio, Eclipse, PyCharm 
+
+
+5. Quais os principais ambientes de desenvolvimento para criação de código C++?
+
+Visual Studio, Code Blocks, Dev-C++
+6. Quais os principais compiladores para a linguagem C++?
+- GCC
+- MinGW
+- Clang
+- Microsoft Visual C++
