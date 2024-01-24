@@ -1,0 +1,17 @@
+a. Qual é a ordem de chamada das funções dentro da função principal? Ou
+seja, quem será chamada primeiro, f() ou g()?
+
+No C++ a linguagem não define qual função será avaliada primeiro, a ordem
+das funções irá depender dos critérios usados por cada compilador para
+realizar essa tarefa.
+
+b. Qual é o resultado do programa? Ele seria o mesmo se invertêssemos a
+ordem das chamadas de f() e g() dentro da função principal?
+
+O resultado inicial é 8, se invertermos as funções o resultado será 12.
+
+c. Existe alguma garantia de que as funções f() e g() serão sempre chamadas
+na ordem em que elas aparecem no programa?
+
+Não, essa tarefa cabe ao compilador e cada um pode chamar as funções em ordens
+diferentes.

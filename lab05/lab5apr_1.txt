@@ -1,0 +1,9 @@
+1. Qual é a diferença entre as instruções de inicialização a seguir? Existe alguma
+razão para preferir uma opção sobre a outra? O resultado delas depende de onde
+elas estão dentro do código?
+
+A diferença entre os dois modos é que a primeira usa duas instruções separadas para
+declarar e atribuir, enquanto a segunda realiza ambas as operações em uma única linha.
+A segunda forma é preferida pela sua concisão e clareza, evitando potenciais esquecimentos 
+de inicialização e tornando o código mais legível. Embora a eficiência de execução seja 
+geralmente otimizada, a escolha impacta mais na legibilidade do código, tornando a segunda opção mais comum.

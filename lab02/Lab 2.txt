@@ -1,0 +1,8 @@
+Lab 2
+
+Revisão:
+
+3. O programa exibe corretamente apenas a acentuação da palavra lida.
+
+4. O resultado permanece o mesmo executando pelo prompt, porém após executar o comando "chcp 1252"
+os acentos são exibidos corretamente.
