@@ -3,8 +3,8 @@ unsigned int empacotar(unsigned int passo, unsigned int cor, unsigned int pos, u
     passo = passo & 0xFF;
     cor = cor & 0xFF;
     pos = pos & 0x7F;
-    vel = vel & 0x0F;
-    oleo = oleo & 0x01;
+    vel = vel & 0xF;
+    oleo = oleo & 0x1;
 
 
     unsigned int resultado = 0;
