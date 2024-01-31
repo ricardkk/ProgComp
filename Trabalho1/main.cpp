@@ -19,52 +19,72 @@ void desenhaCaminhao(int posicao,int cor) {
 	ajustaCor(cor);
 	cout << "\n"; WhiteSpace(posicao); cout << "\xDB\xDB\xDB\xDB\xDB\xDB \xDB\xDB\xDC";
 	cout << "\n"; WhiteSpace(posicao); cout << "\xDF\xDFOO\xDF\xDF\xDF\xDFO\xDF"; 
-	cout << "\n------------------------------------------------------------------------------------------|--------------------\n"; 
-	cout << "                                                                                         100";
-	resetaCor();
+	cout << "\n--------------------------------------------------------------------------------------------------------------|--------------------\n"; 
+	cout << "                                                                                                              100";
+	resetaCor(); 
 }
 
 int main()
 {
-	int posicao, velocidade, cor;
-	bool estadoPista;
-
+	int posicaoA = 0, velocidadeA, corA, posicaoB = 0, velocidadeB, corB,r;
+	bool estadoPistaA, estadoPistaB;
+	char espera;
 	int passo = 0;
 	do
 	{
 		// ------------------
 		// Limpa tela
-		// Desenha caminhÃµes
+		// Desenha caminhões
 		// ------------------
+		corA = branco; corB = azulClaro;
 		limpaTela();
-		desenhaCaminhao(posicao, cor);
+		ajustaCor(15, 238); cout << "\n                                                     Truck Racing                                                       \n";
+		desenhaCaminhao(posicaoA, corA);
+		desenhaCaminhao(posicaoB, corB);
 
 			// ------------------------
 			// Atualiza velocidade
 			// Atualiza estado da pista
 			// ------------------------
 		srand(unsigned(time(NULL)));
-		velocidade = rand() % 10 + 1;
+		velocidadeA = rand() % 10 + 1;
+		velocidadeB = rand() % 10 + 1;
+		estadoPistaA = rand() % 2;
+		estadoPistaB = rand() % 2;
 			// ----------------------------------
 			// Transmite, recebe e processa dados
-			// Calcula PrÃ³xima posiÃ§Ã£o
+			// Calcula Próxima posição
 			// ----------------------------------
-		transmitir(passo,cor,posicao,velocidade,estadoPista);
-		receber();
-		processar(receber());
+		cout << endl;
+		transmitir(passo, corA, posicaoA, velocidadeA, estadoPistaA); 
+		r = receber();
+		posicaoA = processar(r);
+		cout << endl;
+		transmitir(passo, corB, posicaoB, velocidadeB, estadoPistaB); 
+		r = receber();
+		posicaoB = processar(r);
 
 			// -------------------------------
 			// Aguarda pressionamento de tecla
 			// -------------------------------
-
+		cin >> espera;
 			passo = passo + 1;
-	} while (posA <= 100 && posB <= 100);
+	} while (posicaoA <= 100 && posicaoB <= 100);
 	// --------------------
 	// Limpa tela
-	// Desenha caminhÃµes
+	// Desenha caminhões
 	// Exibe resultados
 	// --------------------
+	limpaTela();
+	ajustaCor(15, 238); cout << "\n                                                     Truck Racing                                                       \n";
+	desenhaCaminhao(posicaoA, corA);
+	desenhaCaminhao(posicaoB, corB);
 	
+	ajustaCor(15, 238); cout << "\n                                                     Corrida Concluída                                                      " << endl; resetaCor();
+	cout << "\nPassos " << passo << endl;
+	
+	cout << "Posição " << posicaoA << " Velocidade média " << float(posicaoA) / float(passo) << endl;
+	cout << "Posição " << posicaoB << " Velocidade média " << float(posicaoB) / float(passo) << endl;
 	 
 	
 	
