@@ -27,18 +27,17 @@ void desenhaCaminhao(int posicao,int cor) {
 int main()
 {
 	int posicaoA = 0, velocidadeA, corA, posicaoB = 0, velocidadeB, corB,r;
-	bool estadoPistaA, estadoPistaB;
-	char espera;
+	bool estadoPistaA, estadoPistaB;
 	int passo = 0;
 	do
 	{
 		// ------------------
 		// Limpa tela
-		// Desenha caminhıes
+		// Desenha caminh√µes
 		// ------------------
 
 		/*
-		CORES DISPONÕVEIS:
+		CORES DISPON√çVEIS:
 		vermelho
 		azulEscuro
 		amarelo
@@ -67,7 +66,7 @@ int main()
 		estadoPistaB = rand() % 2;
 			// ----------------------------------
 			// Transmite, recebe e processa dados
-			// Calcula PrÛxima posiÁ„o
+			// Calcula Pr√≥xima posi√ß√£o
 			// ----------------------------------
 		cout << endl;
 		transmitir(passo, corA, posicaoA, velocidadeA, estadoPistaA); 
@@ -87,7 +86,7 @@ int main()
 	} while (posicaoA <= 110 && posicaoB <= 110);
 	// --------------------
 	// Limpa tela
-	// Desenha caminhıes
+	// Desenha caminh√µes
 	// Exibe resultados
 	// --------------------
 	limpaTela();
@@ -95,12 +94,12 @@ int main()
 	desenhaCaminhao(posicaoA, corA);
 	desenhaCaminhao(posicaoB, corB);
 	
-	ajustaCor(15, 238); cout << "\n                                                     Corrida ConcluÌda                                                      " << endl; resetaCor();
+	ajustaCor(15, 238); cout << "\n                                                     Corrida Conclu√≠da                                                      " << endl; resetaCor();
 	cout << "\nPassos " << passo << endl;
 	cout.setf(ios_base::fixed, ios_base::floatfield);
 	cout.precision(2);
-	cout << "PosiÁ„o " << posicaoA << " Velocidade mÈdia " << float(posicaoA) / float(passo) << endl;
-	cout << "PosiÁ„o " << posicaoB << " Velocidade mÈdia " << float(posicaoB) / float(passo) << endl;
+	cout << "Posi√ß√£o " << posicaoA << " Velocidade m√©dia " << float(posicaoA) / float(passo) << endl;
+	cout << "Posi√ß√£o " << posicaoB << " Velocidade m√©dia " << float(posicaoB) / float(passo) << endl;
 	 
 	
 	
