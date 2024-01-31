@@ -36,7 +36,21 @@ int main()
 		// Limpa tela
 		// Desenha caminhões
 		// ------------------
-		corA = branco; corB = azulClaro;
+
+		/*
+		CORES DISPONÍVEIS:
+		vermelho
+		azulEscuro
+		amarelo
+		branco
+		vinho
+		azulClaro
+		verde
+		roxo
+		*/
+
+		corA = roxo; corB = verde;
+
 		limpaTela();
 		ajustaCor(15, 238); cout << "\n                                                     Truck Racing                                                       \n";
 		desenhaCaminhao(posicaoA, corA);
@@ -67,9 +81,10 @@ int main()
 			// -------------------------------
 			// Aguarda pressionamento de tecla
 			// -------------------------------
-		cin >> espera;
+		cout << endl;
+		system("pause");
 			passo = passo + 1;
-	} while (posicaoA <= 100 && posicaoB <= 100);
+	} while (posicaoA <= 110 && posicaoB <= 110);
 	// --------------------
 	// Limpa tela
 	// Desenha caminhões
@@ -82,7 +97,8 @@ int main()
 	
 	ajustaCor(15, 238); cout << "\n                                                     Corrida Concluída                                                      " << endl; resetaCor();
 	cout << "\nPassos " << passo << endl;
-	
+	cout.setf(ios_base::fixed, ios_base::floatfield);
+	cout.precision(2);
 	cout << "Posição " << posicaoA << " Velocidade média " << float(posicaoA) / float(passo) << endl;
 	cout << "Posição " << posicaoB << " Velocidade média " << float(posicaoB) / float(passo) << endl;
 	 
